@@ -1170,13 +1170,13 @@
                         </ul>
                         
                         <div class="navbar">
-                          <ul class="navbar-menu">
-                            <li class="active" ><a href="#" >Stake</a></li>
+                          <ul class=" navbar-menu">
+                            <li class="active" ><a href="/" >Stake</a></li>
                             <li><a href="/">Liquid</a></li>
                             <li><a href="/">Cash<span class="soon">Soon</span></a></li>
                             <li><a href="/">Portfolio</a></li>
                             <li><a href="/">DeFi</a></li>
-                            <li><a href="/"><img src="/favicon/icons8-expand-arrow-30.png""></a></li>
+                            <li><a href="/"><img src="/favicon/icons8-expand-arrow-30.png"></a></li>
                           </ul>
                           <div class="navbar-container">
                             <button class="menu-toggle" onclick="toggleMenu()">&#x22EE;</button>
@@ -1185,8 +1185,9 @@
                         
                     <script>
                       function toggleMenu() {
+                        console.log("Clicked")
                         const navbarMenu = document.querySelector('.navbar-menu');
-                        navbarMenu.style.display = navbarMenu.style.display === 'flex' ? 'none' : 'flex';
+                        navbarMenu.classList.toggle('show');
                       }
                     </script>
                     <!-- <div class="css-1sfvchr">

@@ -80,23 +80,32 @@
 }
 
 @media (max-width: 1000px) {
-    .navbar-menu {
-        display: none;
+    .navbar ul {
         flex-direction: column;
-        width: 100%;
+        width: 30%;
         position: absolute;
         top: 100%;
-        left: 0;
         background-color: #1e1e3f;
         z-index: 1;
+        opacity: 1;
+        display: none;
+    }
+
+    .navbar .show{
+        /* opacity: 0; */
+        display: flex
     }
 
     .navbar-menu li {
         margin: 10px 0;
     }
 
+    .navbar-container {
+        width: 100%;
+    }
     .menu-toggle {
-        display: block;
-        width: auto;
+        display: flex;
+        justify-content: right;
+        
     }
 }
